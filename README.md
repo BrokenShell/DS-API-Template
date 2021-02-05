@@ -38,5 +38,5 @@ each of the environment variables required for the app.
 
 
 ### Docker Commands
-- `docker build . -t hrf-ds-api`
-- `docker run -p 5000:5000 hrf-ds-api`
+- `docker build . -t ds-api`
+- `docker run -p 5000:5000 ds-api`
