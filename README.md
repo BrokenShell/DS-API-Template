@@ -1,4 +1,4 @@
-# Human Rights First - DS API
+# DS API Template
 
 
 ### Deployment URLs
