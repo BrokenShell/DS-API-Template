@@ -1,7 +1,7 @@
 # DS Flask API Template
 ## Iris Example Project
 
-### Deployment URLs
+### Deployment URL
 - https://api-test.storysquad.dev
 
 ### Project Structure
@@ -20,9 +20,8 @@
 
 ### Project Dependencies
 - Python 3.7
-    - fastapi
-    - pydantic
-    - uvicorn[standard]
+    - Flask
+    - gunicorn
     - joblib
     - pandas
     - scikit-learn
@@ -30,12 +29,12 @@
 - eb
 
 ## Setup Instructions - Unix/Linux
-In the following steps replace `ds-fastapi-test` with your project's name.
+In the following steps replace `ds-api-test` with your project's name.
 
 ### Local Virtual Environment Setup
 ```
-mkdir ds-fastapi-test
-cd ds-fastapi-test
+mkdir ds-api-test
+cd ds-api-test
 python3.7 -m venv venv
 ```
 
@@ -49,13 +48,13 @@ python3.7 -m venv venv
 `eb init`
 
 ### EB - Deploy
-`eb create --region us-east-1 ds-fastapi-test`
+`eb create --region us-east-1 ds-api-test`
 
 ### EB - Redeploy
-`eb deploy ds-fastapi-test`
+`eb deploy ds-api-test`
 
 ### EB - Open App
-`eb open ds-fastapi-test`
+`eb open ds-api-test`
 
 ### EB Environment Variables
 In the Elastic Beanstalk Console go to your environment -> Configuration. Then
