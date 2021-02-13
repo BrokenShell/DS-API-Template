@@ -1,7 +1,6 @@
 # DS Flask API Template
 ## Iris Example Project
 
-
 ### Deployment URLs
 - https://api-test.storysquad.dev
 
