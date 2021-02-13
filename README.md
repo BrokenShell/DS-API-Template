@@ -7,16 +7,16 @@
 ### Project Structure
 - Project Directory
     - `/application` - Python package
-        - `__init__.py` - `from application.main import application`
-        - `main.py` - primary application routes and Flask app named `application`
-        - `model.joblib` - joblib or pickled model
+        - `__init__.py`
+        - `main.py` Primary application routes and Flask app named `application`
+        - `model.joblib` joblib or pickled model
     - `.gitignore`
     - `.ebignore`
-    - `builder.py` - ML model builder script (external)
-    - `loader.py` - ML model loader script (external)
-    - `README.md` - This file
-    - `Dockerfile` - Environment
-    - `requirements.txt` - Dependencies
+    - `builder.py` ML model builder script (external)
+    - `loader.py` ML model loader script (external)
+    - `Procfile` 
+    - `README.md` This file
+    - `requirements.txt` Dependencies
 
 ### Iris Example Project Dependencies
 - Python 3.7
