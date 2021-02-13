@@ -6,7 +6,7 @@
 
 ### Project Structure
 - Project Directory
-    - `/application` - Python package
+    - `/application` Python package directory
         - `__init__.py`
         - `main.py` Primary application routes and Flask app named `application`
         - `model.joblib` joblib or pickled model
@@ -14,7 +14,7 @@
     - `.ebignore`
     - `builder.py` ML model builder script (external)
     - `loader.py` ML model loader script (external)
-    - `Procfile` 
+    - `Procfile` Web app entrypoint
     - `README.md` This file
     - `requirements.txt` Dependencies
 
