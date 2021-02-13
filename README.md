@@ -5,8 +5,8 @@
 - https://api-test.storysquad.dev
 
 ### Project Structure
-- Project Directory
-    - `/application` Python package directory
+- `/ds-api-test/` Project Directory
+    - `/application/` Python package directory
         - `__init__.py`
         - `main.py` Primary application routes and Flask app named `application`
         - `model.joblib` joblib or pickled model
@@ -28,7 +28,7 @@
 - awscli
 - eb
 
-## Setup Instructions - Unix/Linux
+## Setup Instructions - Unix/Linux or Windows with WSL
 In the following steps replace `ds-api-test` with your project's name.
 
 ### Local Virtual Environment Setup
