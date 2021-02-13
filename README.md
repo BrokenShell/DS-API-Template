@@ -32,29 +32,48 @@
 In the following steps replace `ds-api-test` with your project's name.
 
 ### Local Virtual Environment Setup
-```
+```shell
 mkdir ds-api-test
 cd ds-api-test
 python3.7 -m venv venv
 ```
 
 ### Local Virtual Environment Activation
-`source venv/bin/activate`
+```shell
+source venv/bin/activate
+```
 
 ### Install Local Dependencies
-`pip install -r requirements.txt`
+```shell
+pip install -r requirements.txt
+```
+
+### Run App Locally
+```shell
+gunicorn application:application
+```
 
 ### Elastic Beanstalk - Initialize
-`eb init`
+```shell
+eb init
+```
+This is an interactive prompt. It will ask you a series of questions about your project.
+For more details - refer to this walk through: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html
 
 ### Elastic Beanstalk - Deploy
-`eb create --region us-east-1 ds-api-test`
+```shell
+eb create --region us-east-1 ds-api-test
+```
 
 ### Elastic Beanstalk - Redeploy
-`eb deploy ds-api-test`
+```shell
+eb deploy ds-api-test
+```
 
 ### Elastic Beanstalk - Open App
-`eb open ds-api-test`
+```shell
+eb open ds-api-test
+```
 
 ### Elastic Beanstalk Environment Variables
 In the Elastic Beanstalk Console go to your environment -> Configuration. Then
